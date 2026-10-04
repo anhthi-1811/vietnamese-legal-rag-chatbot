@@ -1,0 +1,27 @@
+rag:
+  # Số lượng tài liệu từ Reranker đưa vào context
+  top_k_documents: 3
+
+  # Cấu hình băm nhỏ tài liệu dài (Passage Retriever)
+  passage:
+    long_doc_threshold_chars: 6000
+    max_passage_chars: 2500
+    top_passages_per_doc: 2
+    overlap_paragraphs: 0
+
+  # Giới hạn kích thước context tối đa gửi cho LLM
+  context:
+    max_context_chars: 12000
+
+generation:
+  model_name: "gemini-3.1-flash-lite"  # Hoặc gemini-3.6-flash tùy model bạn đang gọi 
+  temperature: 0.0
+  max_output_tokens: 1024
+  max_retries: 3
+
+runtime:
+  # Tần suất ghi checkpoint Parquet
+  checkpoint_every: 5
+  
+  # Thời gian nghỉ giữa các query (giây) để tránh lỗi 429 trên Free Tier
+  request_sleep_seconds: 4.5 

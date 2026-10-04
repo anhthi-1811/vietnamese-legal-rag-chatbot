@@ -1,0 +1,18 @@
+{
+    "model_name": "BAAI/bge-m3",
+    "total_documents": 261597,
+    "min_tokens": 4,
+    "median_tokens": 204,
+    "mean_tokens": 283.96262954085864,
+    "p90_tokens": 636,
+    "p95_tokens": 728,
+    "p99_tokens": 1034,
+    "max_tokens": 67371,
+    "counts_above_thresholds": {
+        "> 512": 41036,
+        "> 1024": 2672,
+        "> 2048": 513,
+        "> 4096": 129,
+        "> 8192": 25
+    }
+}

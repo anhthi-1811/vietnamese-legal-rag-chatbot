@@ -1,0 +1,66 @@
+[
+    {
+        "conversation_id": "conv_001_follow_up",
+        "description": "Test khả năng viết lại câu hỏi bám sát chủ đề gốc (Follow-up)",
+        "turns": [
+            {
+                "turn_id": 1,
+                "user": "Tội giết người bị phạt thế nào?",
+                "expected_topic": "Điều 123 Bộ luật Hình sự"
+            },
+            {
+                "turn_id": 2,
+                "user": "Nếu không thuộc khoản 1 thì sao?",
+                "expected_rewrite_keywords": [
+                    "giết người",
+                    "khoản 1",
+                    "Điều 123"
+                ]
+            },
+            {
+                "turn_id": 3,
+                "user": "Trường hợp đó có bị tử hình không?",
+                "expected_topic": "Khoản 2 Điều 123"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_002_clarification",
+        "description": "Test khả năng chặn câu hỏi mơ hồ (Clarification)",
+        "turns": [
+            {
+                "turn_id": 1,
+                "user": "Cái đó thì xử lý thế nào?",
+                "expected_status": "needs_clarification"
+            },
+            {
+                "turn_id": 2,
+                "user": "À ý tôi là hành vi trộm cắp tài sản",
+                "expected_topic": "Điều 173 Bộ luật Hình sự",
+                "expected_rewrite_keywords": [
+                    "trộm cắp tài sản"
+                ]
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_003_topic_switch",
+        "description": "Test khả năng chuyển chủ đề đột ngột (Topic Switch)",
+        "turns": [
+            {
+                "turn_id": 1,
+                "user": "Lãi suất tiền gửi tiết kiệm tối đa là bao nhiêu?",
+                "expected_topic": "Lãi suất tiền gửi"
+            },
+            {
+                "turn_id": 2,
+                "user": "Thế cố ý gây thương tích 15% thì đi tù mấy năm?",
+                "expected_topic": "Điều 134 Bộ luật Hình sự",
+                "expected_rewrite_keywords": [
+                    "cố ý gây thương tích",
+                    "15%"
+                ]
+            }
+        ]
+    }
+]

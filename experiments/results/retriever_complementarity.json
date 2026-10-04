@@ -1,0 +1,58 @@
+{
+    "Top-1": {
+        "counts": {
+            "BOTH_CORRECT": 16549,
+            "A_ONLY_CORRECT": 7343,
+            "B_ONLY_CORRECT": 18131,
+            "BOTH_WRONG": 47238
+        },
+        "percentages": {
+            "BOTH_CORRECT": 18.54,
+            "A_ONLY_CORRECT": 8.23,
+            "B_ONLY_CORRECT": 20.31,
+            "BOTH_WRONG": 52.92
+        }
+    },
+    "Top-5": {
+        "counts": {
+            "BOTH_CORRECT": 40069,
+            "A_ONLY_CORRECT": 5538,
+            "B_ONLY_CORRECT": 19536,
+            "BOTH_WRONG": 24118
+        },
+        "percentages": {
+            "BOTH_CORRECT": 44.89,
+            "A_ONLY_CORRECT": 6.2,
+            "B_ONLY_CORRECT": 21.89,
+            "BOTH_WRONG": 27.02
+        }
+    },
+    "Top-10": {
+        "counts": {
+            "BOTH_CORRECT": 49233,
+            "A_ONLY_CORRECT": 4456,
+            "B_ONLY_CORRECT": 17914,
+            "BOTH_WRONG": 17658
+        },
+        "percentages": {
+            "BOTH_CORRECT": 55.16,
+            "A_ONLY_CORRECT": 4.99,
+            "B_ONLY_CORRECT": 20.07,
+            "BOTH_WRONG": 19.78
+        }
+    },
+    "Top-20": {
+        "counts": {
+            "BOTH_CORRECT": 57120,
+            "A_ONLY_CORRECT": 3598,
+            "B_ONLY_CORRECT": 15689,
+            "BOTH_WRONG": 12854
+        },
+        "percentages": {
+            "BOTH_CORRECT": 63.99,
+            "A_ONLY_CORRECT": 4.03,
+            "B_ONLY_CORRECT": 17.58,
+            "BOTH_WRONG": 14.4
+        }
+    }
+}

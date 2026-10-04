@@ -1,0 +1,11 @@
+pandas
+pyarrow
+torch
+transformers
+FlagEmbedding
+faiss-cpu
+google-genai
+python-dotenv
+PyYAML
+streamlit
+pytest 

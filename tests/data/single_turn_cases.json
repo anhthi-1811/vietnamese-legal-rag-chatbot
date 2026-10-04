@@ -1,0 +1,21 @@
+[
+    {
+        "id": "case_001",
+        "question": "Cố tình gây thương tích dẫn đến tử vong thì bị phạt tù hay tử hình",
+        "expected_topic": "Cố ý gây thương tích (Điều 134, 135, 136)",
+        "expected_cids_any": [
+            "64054",
+            "594211",
+            "594212"
+        ]
+    },
+    {
+        "id": "case_002",
+        "question": "Cố ý giết người thì bị phạt tù hay tử hình",
+        "expected_topic": "Tội giết người (Điều 123)",
+        "expected_cids_any": [
+            "64179",
+            "213852"
+        ]
+    }
+]

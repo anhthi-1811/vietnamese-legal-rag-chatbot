@@ -1,0 +1,31 @@
+bm25:
+  top_k: 50
+  lowercase: true
+  k1: 1.5
+  b: 0.75
+
+dense:
+  model_name: "BAAI/bge-m3"
+  top_k: 50
+  max_length: 1024
+  batch_size: 32
+  use_fp16: true
+  normalize_embeddings: true
+
+hybrid:
+  method: rrf
+  rrf_k: 60
+  input_top_k: 50
+  output_top_k: 50
+
+evaluation:
+  recall_k: [1, 5, 10, 20]
+  mrr_k: [1, 5, 10, 20]
+  ndcg_k: [1, 5, 10, 20]
+
+reranker:
+  model_name: "BAAI/bge-reranker-v2-m3"
+  batch_size: 256
+  max_length: 512
+  use_fp16: true
+  top_k_output: 20 

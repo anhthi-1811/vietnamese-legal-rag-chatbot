@@ -1,0 +1,27 @@
+runtime:
+  mode: fast # Đổi thành 'full' khi chạy Evaluation benchmark
+
+full:
+  bm25_top_k: 50
+  dense_top_k: 50
+  rerank_max_candidates: 100
+
+fast:
+  bm25_top_k: 20
+  dense_top_k: 20
+  rerank_max_candidates: 20
+
+chat:
+  max_history_turns: 6
+
+query_rewriter:
+  enabled: true
+  model_name: gemini-3.1-flash-lite
+  temperature: 0.0
+
+clarification:
+  enabled: true
+
+debug:
+  show_rewritten_query: true
+  show_retrieved_sources: true 

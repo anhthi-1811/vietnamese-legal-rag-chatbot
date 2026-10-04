@@ -1,0 +1,17 @@
+# Environments
+.env
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Data & Models (Không đẩy lên Git)
+artifacts/
+data/raw/
+data/processed/
+experiments/results/*.parquet
+experiments/results/*.csv
+
+# OS generated files
+.DS_Store
+Thumbs.db 

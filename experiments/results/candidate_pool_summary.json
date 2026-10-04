@@ -1,0 +1,41 @@
+[
+    {
+        "Depth":20,
+        "BM25 Recall":0.6802298876,
+        "BGE Recall":0.815686582,
+        "Union Recall":0.8559953395,
+        "Avg Pool Size":33.391817255,
+        "Median Pool Size":34.0,
+        "P95 Pool Size":39.0,
+        "Max Pool Size":40,
+        "BGE Had Gold %":81.5686582046,
+        "BM25 Added Gold %":4.0308757464,
+        "Neither Had Gold %":14.400466049
+    },
+    {
+        "Depth":50,
+        "BM25 Recall":0.7649141282,
+        "BGE Recall":0.8782895105,
+        "Union Recall":0.9073391515,
+        "Avg Pool Size":83.8638599164,
+        "Median Pool Size":84.0,
+        "P95 Pool Size":96.0,
+        "Max Pool Size":100,
+        "BGE Had Gold %":87.8289510537,
+        "BM25 Added Gold %":2.9049640941,
+        "Neither Had Gold %":9.2660848523
+    },
+    {
+        "Depth":100,
+        "BM25 Recall":0.8179944209,
+        "BGE Recall":0.912828671,
+        "Union Recall":0.9355149505,
+        "Avg Pool Size":168.4231187193,
+        "Median Pool Size":170.0,
+        "P95 Pool Size":191.0,
+        "Max Pool Size":200,
+        "BGE Had Gold %":91.2828670976,
+        "BM25 Added Gold %":2.2686279562,
+        "Neither Had Gold %":6.4485049462
+    }
+]

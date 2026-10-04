@@ -1,0 +1,43 @@
+[
+    {
+        "id": "rewrite_001",
+        "history": [
+            {
+                "role": "user",
+                "content": "Tội giết người bị phạt thế nào?"
+            },
+            {
+                "role": "assistant",
+                "content": "Theo Điều 123 Bộ luật Hình sự, người phạm tội giết người có thể bị phạt tù từ 07 năm đến 15 năm, 12 năm đến 20 năm, tù chung thân hoặc tử hình."
+            }
+        ],
+        "question": "Nếu không thuộc khoản 1 thì sao?",
+        "expected_status": "rewritten",
+        "expected_keywords": [
+            "giết người",
+            "khoản 1",
+            "123"
+        ]
+    },
+    {
+        "id": "rewrite_002",
+        "history": [],
+        "question": "Tội trộm cắp tài sản bị phạt thế nào?",
+        "expected_status": "unchanged",
+        "expected_keywords": [
+            "trộm cắp"
+        ]
+    },
+    {
+        "id": "rewrite_003",
+        "history": [
+            {
+                "role": "user",
+                "content": "Chào chatbot"
+            }
+        ],
+        "question": "Cái đó thì sao?",
+        "expected_status": "needs_clarification",
+        "expected_keywords": []
+    }
+]
